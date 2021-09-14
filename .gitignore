@@ -1,0 +1,15 @@
+# python
+*.pyc
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.venv
+__pycache__
+.DS_Store
+# direnv config file.
+.envrc
+/frontend/*.log

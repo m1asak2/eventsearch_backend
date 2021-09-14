@@ -1,0 +1,10 @@
+uvicorn
+fastapi
+python-dateutil
+pytest
+autopep8
+python-multipart
+flake8
+chardet
+requests
+bs4

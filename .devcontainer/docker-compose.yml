@@ -1,0 +1,37 @@
+version: "3"
+services:
+  eventback:
+    container_name: eventback
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+    working_dir: "/app"
+    # volumes:
+    #   - ../eventback:/usr/eventback
+    environment:
+      TZ: Asia/Tokyo
+    # networks:
+    #   - event-network
+    # restart: always
+    ports:
+      - 8002:8080
+#   nginx_event:
+#     image: nginx
+#     container_name: nginx_event
+#     environment:
+#       TZ: Asia/Tokyo
+#       FASTAPI: eventback
+#     networks:
+#       - event-network
+#     ports:
+#       - 80:80
+#     volumes:
+#       - type: bind
+#         source: ../nginx/templates
+#         target: /etc/nginx/templates
+#       - type: bind
+#         source: ../../frontend/event_front/dist
+#         target: /usr/share/nginx/html
+# networks:
+#   event-network:
+#     external: true
