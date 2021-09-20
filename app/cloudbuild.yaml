@@ -16,6 +16,6 @@ steps:
    - 'gcr.io/$PROJECT_ID/backend:latest'
    - '--region'
    - 'asia-northeast1'
-  # args: ['run', 'deploy', '--image','backend', 'gcr.io/$PROJECT_ID/backend:latest','--region','asia-northeast1','--allow-unauthenticated']
+   - '--allow-unauthenticated'
 images: ['gcr.io/$PROJECT_ID/backend:latest']
 
